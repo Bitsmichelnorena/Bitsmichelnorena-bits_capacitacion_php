@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><strong>FORMULARIO</strong></h1>
+    <form action="6_7b.php" method="POST">
+        <p>Nombre: <input type="text" required name="nombre"></p>
+        <p>Apellido: <input type="text" required name="apellido"></p>
+        <p>Paises: <select name="paises" required>
+                <option value="Colombia">Colombia</option>
+                <option value="España">España</option>
+                <option value="Rusia">Rusia</option>
+                <option value="Holanda">Holanda</option>
+                <option value="Francia">Francia</option>
+                <option value="Mexico">Mexico</option>
+            </select></p>
+        <p>Usuario: <input type="text" required name="usuario" pattern="^@?(\w){5,10}$" title="este usuario no es valido maximo 10 letras sin caracteres especiales La cadena puede comenzar por @ ."></p>
+        <p>Contraseña: <input minlength="8" maxlength="10" type="password" required name="contraseña"  title="contraseña no valida maximo 10 caracteres y con al menos uno de estos caracteres . , / _"></p>
+        <p><input type="submit" value="ENTRAR"></p>
+    </form>
+
+
+</body>
+
+</html>
